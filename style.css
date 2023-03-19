@@ -1,0 +1,55 @@
+body {
+  background-color: #131316;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  min-height: 100vh;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(10px);
+  transform: translateX(-50%);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0px);
+  transform: translateX(0);
+}
+
+.logos {
+  display: flex;
+  gap: 10px;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+}
+
+.logo:nth-child(1) {
+  background-color: red;
+}
+
+.logo:nth-child(2) {
+  background-color: green;
+  transition-delay: 200ms;
+}
+
+.logo:nth-child(3) {
+  background-color: blue;
+  transition-delay: 400ms;
+}
+
+.logo:nth-child(4) {
+  background-color: white;
+  transition-delay: 600ms;
+}
